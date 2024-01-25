@@ -7,7 +7,7 @@ import 'leaflet/dist/leaflet.css';
 const MapComponent = () => {
   const mapStyle = {
     position: "absolute",
-    height: "750px",
+    height: "900px",
     width: "48%",
     left: "50%",
   };

@@ -34,10 +34,10 @@ const WeatherComponent = () => {
 
   return (
     <div >
-      <div className="temperature">{`Temperature: ${Temperature.Metric.Value} ${Temperature.Metric.Unit}`}</div>
+      <div className="temperature">{`Temperature: ${Temperature.Metric.Value} ${Temperature.Metric.Unit} & ${Temperature.Imperial.Value} ${Temperature.Imperial.Unit}`}</div>
       <div className="weather-text">{`Weather: ${WeatherText}`}</div>
       <img
-        src={`https://developer.accuweather.com/sites/default/files/${WeatherIcon}-s.png`}
+        src={`http://developer.accuweather.com/sites/default/files/0${WeatherIcon}-s.png`}
         alt="Weather Icon"
       />
     </div>
