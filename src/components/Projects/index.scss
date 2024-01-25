@@ -1,0 +1,10 @@
+img {
+    display: block;
+    margin: 5% auto;
+    height: auto;
+    
+    &.sub-cv-int{
+        top: 23%;
+        width: 35%;
+    }
+}
