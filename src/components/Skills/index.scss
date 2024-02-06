@@ -1,0 +1,17 @@
+
+.skills {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skill {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #ffd700;
+    animation: fadeIn 1s 1.7s backwards;
+    opacity: 0.6;
+  }
+  

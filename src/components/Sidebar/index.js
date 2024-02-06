@@ -5,9 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
   faGithub,
+  
 } from '@fortawesome/free-brands-svg-icons'
 import {
-  faEnvelope,
+  faEnvelope,    faBars, faHome
+
 } from '@fortawesome/free-solid-svg-icons'
 
 import { GrProjects } from "react-icons/gr";
@@ -44,6 +46,17 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
 
+        <NavLink
+          activeclassname="active"
+          className="home-link"
+          to="/"
+          onClick={() => setShowNav(false)}
+        >
+        
+        <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+
+        </NavLink>
+   
       </nav>
       <ul>
         <li>
@@ -74,8 +87,13 @@ const Sidebar = () => {
             />
           </a>
         </li>
-        
       </ul>
+      <FontAwesomeIcon 
+          onClick={() => setShowNav(true)}
+          icon={faBars}
+          color="#ffd700"
+          size="3x"
+          className='hamburger-icon' />
   
     </div>
   )

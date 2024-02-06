@@ -81,6 +81,12 @@
       }
     }
 
+    a.home-link {
+      &:after {
+        content: 'Home';
+      }
+    }
+
     a.active {
       svg {
         color: #ffd700;
@@ -164,12 +170,19 @@
       }
      }
 
-     .hamburger-icon,
-     .close-icon {
+     .hamburger-icon:hover, .close-icon:hover       {
+     
+      transform: scale(1.4); 
+      box-shadow: 0 0 10px #ffd700;
+
+      }
+     .hamburger-icon  {
         position: absolute;
+        z-index: 2;
         top: 15px;
         right: 15px;
         display: block;
      }
+     
   }
 }

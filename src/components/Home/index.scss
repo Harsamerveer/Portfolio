@@ -1,4 +1,109 @@
+.container {
+  position: relative;
+  width: 100%;
+
+.cv-harsamerveersingh{
+  position: relative;
+  left: 62%;
+  top: 30px;
+}
+
+.cv-download-harsamerveersingh{
+  color: #ffd700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 1px solid #ffd700;
+  border-radius: 4px;
+  background: 0 0;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px;
+}
+
+.cv-download-harsamerveersingh:hover{
+    color: #f6e26e;
+    font-size: 19px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #ffd700;
+    border-radius: 4px;
+    background: 0 0;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+}
+
+.page-pp {
+  position: relative;
+  left: 60%;
+  top: 20px;
+  width: 25%;
+}
+
+.sub-pp-int {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.page-pp:hover .sub-pp-int {
+  opacity: 0.3;
+}
+
+.page-pp:hover .middle {
+  opacity: 1;
+}
+
+.sub-HSR-int {  
+  width: 100%;
+  padding: 5px 5px;
+}
+
+.cv-view-harsamerveersingh{
+  color: #ffd700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 1px solid #ffd700;
+  border-radius: 4px;
+  background: 0 0;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px;}
+
+.cv-view-harsamerveersingh:hover{
+color: #f6e26e;
+font-size: 19px;
+letter-spacing: 3px;
+text-decoration: none;
+padding: 8px 10px;
+border: 1px solid #ffd700;
+border-radius: 4px;
+background: 0 0;
+text-transform: uppercase;
+text-align: center;
+margin: 10px;
+}
+
 .home-page {
+
     .text-zone {
       position: absolute;
       left: 10%;
@@ -7,15 +112,19 @@
       width: 40%;
       max-height: 90%;
 
-      img{
-        display: block;
-        margin: 5%;
-        width: 600px;
-        height: auto;
-  
+      
+
+      .page{
+        
+        .sub-cv-int{
+            display: block;
+            margin: 3%;
+            width: 600px;
+            height: auto;
+        }
       }
     }
-  
+    
     h1 {
 
       &:before {
@@ -71,6 +180,7 @@
       }
     }
   }
+}
   
   
   
@@ -87,6 +197,7 @@
       transform: none;
       padding: 10px;
       box-sizing: border-box;
+      
     }
   
     .home-page .flat-button {
@@ -114,5 +225,11 @@
       bottom: auto;
       left: 0;
       margin: auto;
+    }
+
+    .home-page .text-zone .page .cv-view-harsamerveersingh{
+
+      display: none;
+       
     }
   }

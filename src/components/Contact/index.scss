@@ -99,6 +99,10 @@
   opacity: 0;
   animation: fadeIn 1s 1.5s;
   animation-fill-mode: forwards;
-
   
 }
+  @media screen and (max-width: 1200px) {
+    .weather-component {
+      display: none;
+    }
+  }
