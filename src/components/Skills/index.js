@@ -1,5 +1,4 @@
-import { react, useState, useEffect } from 'react'
-import { ReactDOM } from 'react';
+import { useState, useEffect } from 'react'
 import './index.scss'
 
 const Skills = () => {

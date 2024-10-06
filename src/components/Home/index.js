@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import Loader from 'react-loaders'
+
 import AnimatedLetters from '../AnimatedLetters'
 import LogoSubtitle from '../../assets/Images/ShortCVVersion2.png'
 import Logo from '../../assets/Images/PP.png'
 import Gif from '../../assets/Images/Logo1.gif'
 import pdf from '../../assets/CV/CV.pdf'
-import Skills from '../Skills'
 import './index.scss'
 
 const Home = () => {
