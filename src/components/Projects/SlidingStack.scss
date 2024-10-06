@@ -1,0 +1,13 @@
+// src/components/projects/SlidingStack.scss
+.sliding-stack {
+  display: flex;
+  justify-content: center;  // Center cards horizontally
+  align-items: center;      // Center cards vertically
+  height: 100vh;            // Take full viewport height
+  overflow: hidden;         // Hide any overflow (if necessary)
+
+  .sliding-stack-inner {
+    display: flex;
+    justify-content: center; // Center the cards
+  }
+}
