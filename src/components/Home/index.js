@@ -81,7 +81,7 @@ const Home = () => {
             </div>
             <div className="page-pp">
               <img className="sub-pp-int" src={Logo} alt="Harsamerveer"/>
-              <div class="middle">
+              <div className="middle">
                 <img className="sub-HSR-int" src={Gif} alt="Harsamerveer"/>
               </div>
             </div>
