@@ -20,7 +20,8 @@ module.exports = {
     ],
     "rules": {
       "no-unused-vars": ["warn"],  // Change unused variables to warnings
-      "react/react-in-jsx-scope": "off"  // Example: Turn off this rule if using Next.js or modern React
+      "react/react-in-jsx-scope": "off",  // Example: Turn off this rule if using Next.js or modern React
+      "react/no-unescaped-entities": "off" 
       // Add more rules as needed
     },
     "settings": {
