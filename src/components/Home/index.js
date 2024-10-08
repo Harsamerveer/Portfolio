@@ -74,7 +74,7 @@ const Home = () => {
        <div className="container">
             <div className="cv-harsamerveersingh">
               <a href={pdf} download="CV" target="_blank" rel="noreferrer" onClick={handleDownload}>
-              <button className="cv-download-harsamerveersingh">Download CV</button>
+              <button className="cv-download-harsamerveersingh">Download CV &lt;Sorry, PDF code is broken; fixing in progress&gt;</button>
               </a>
             </div>
             <div className="page-pp">
