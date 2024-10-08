@@ -1,13 +1,38 @@
-// src/components/projects/SlidingStack.scss
-.sliding-stack {
-  display: flex;
-  justify-content: center;  // Center cards horizontally
-  align-items: center;      // Center cards vertically
-  height: 100vh;            // Take full viewport height
-  overflow: hidden;         // Hide any overflow (if necessary)
+.sliding-stack-container {
+  display: flex; // Use flexbox for side-by-side layout
+  justify-content: center; // Center content horizontally
+  align-items: center; // Center content vertically
+  margin: 0 auto; // Center the entire container
+  max-width: 1300px; // Set a max width for the container
+}
 
-  .sliding-stack-inner {
-    display: flex;
-    justify-content: center; // Center the cards
-  }
+.left-side {
+  margin: 100px;
+  flex: 1; // Take up space on the left
+  padding: 20px; // Add some padding
+  color: white; // Text color
+  // Text styles
+  font-size: 21px; // Set font size
+  line-height: 1.38; // Set line height
+  font-weight: 600; // Set font weight
+  letter-spacing: 0.011em; // Set letter spacing
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif; // Set font family
+}
+
+.sliding-stack {
+  flex: 1; // Take up space on the right
+  position: relative; // To position cards absolutely if needed
+}
+
+.sliding-stack-inner {
+  position: absolute; // Stack cards on top of each other
+  width: 100%; // Full width of the parent
+  height: 100%; // Full height of the parent
+}
+
+.card-wrapper {
+  position: absolute; // Allow absolute positioning for fade effect
+  width: 100%; // Full width of the card
+  height: 100%; // Full height of the card
+  transition: opacity 1s ease-in-out; // Smooth transition for opacity
 }
