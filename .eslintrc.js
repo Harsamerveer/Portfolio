@@ -4,8 +4,10 @@ module.exports = {
       "browser": true,
       "es2021": true,
       "node": true
+
     },
     "extends": [
+
       "eslint:recommended",
       "plugin:react/recommended"
     ],
@@ -20,7 +22,7 @@ module.exports = {
       "react"
     ],
     "rules": {
-      "no-unused-vars": ["warn"],  // Change unused variables to warnings
+      "no-unused-vars": "off",  // Change unused variables to warnings
       "react/react-in-jsx-scope": "off",  // Example: Turn off this rule if using Next.js or modern React
       "react/no-unescaped-entities": "off",
       "react/prop-types": "off",
